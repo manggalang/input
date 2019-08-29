@@ -1,4 +1,4 @@
-function nilai(nilai){
+function value(nilai){
 
 	if (nilai >=0 && nilai <=4){
 		console.log('kurang')
@@ -11,11 +11,29 @@ function nilai(nilai){
 		console.log('baik')
 	}
 	else if (nilai == 10){
-		console.log('sangat baik')
+		alert('sangat baik')
 	}
 
 	else {
 		alert('incorrect data')
 	}
 
-} 
+}
+
+// function hasil(nilai){
+// 	if (nilai >=0 && nilai <=4){
+// 		console.log('mantap')
+// 	}
+
+// 	else if (nilai >=5 && nilai <=7){
+// 		console.log('baik')
+// 	}
+
+// 	else if (nilai >=8 && nilai <=10){
+// 		console.log('goblog')
+// 	}
+
+// 	else {
+// 		alert('gaada')
+// 	}
+// }

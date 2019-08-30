@@ -1,0 +1,98 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			height: 100vh;
+			background-color: #252525;
+		}
+		#name {
+			width: 500px;
+			height: 15px;
+			outline: none;
+			border-bottom: : 1px solid #000;
+			padding: 10px 2px;
+		}
+		#btn {
+			margin-top: 15px;
+			background-color: #ff00ff;
+			width: 150px;
+			height: 50px;
+		}
+
+		#results {
+			width: 500px;
+			height: 200px;
+			background-color: #fff;
+			margin-top: 15px;
+			border: 1px solid cyan;
+			overflow: scroll;
+		}
+	</style>
+</head>
+<body>
+	
+	<input type="text" id="name" placeholder="ketik disini">
+	<input type="button" value="button" onclick="proses()" id="btn" />
+	<div id="results"></div>
+
+	<script>
+		function proses(nilai){
+			var input = document.getElementById('name');
+			var output = document.getElementById('results');
+			var i;
+			if(input.value >0 && input.value <2) {
+				for(i=1; i<=1; i++)
+					output.innerHTML = output.innerHTML + i+ "<br>";
+			}
+			else if(input.value >1 && input.value <3) {
+				for(i=1; i<=2; i++)
+					output.innerHTML = output.innerHTML + i+ "<br>";
+			}
+			else if(input.value >2 && input.value <4) {
+				for(i=1; i<=3; i++)
+					output.innerHTML = output.innerHTML + i+ "<br>";
+			}
+			else if(input.value >3 && input.value <5) {
+				for(i=1; i<=4; i++)
+					output.innerHTML = output.innerHTML + i+ "<br>";
+			}
+			else if(input.value >4 && input.value <6) {
+				for(i=1; i<=5; i++)
+					output.innerHTML = output.innerHTML + i+ "<br>";
+			}
+			else if(input.value >5 && input.value <7) {
+				for(i=1; i<=6; i++)
+					output.innerHTML = output.innerHTML + i+ "<br>";
+			}
+			else if(input.value >6 && input.value <8) {
+				for(i=1; i<=7; i++)
+					output.innerHTML = output.innerHTML + i+ "<br>";
+			}
+			else if(input.value >7 && input.value <9) {
+				for(i=1; i<=8; i++)
+					output.innerHTML = output.innerHTML + i+ "<br>";
+			}
+			else if(input.value >8 && input.value <10) {
+				for(i=1; i<=9; i++)
+					output.innerHTML = output.innerHTML + i+ "<br>";
+			}
+			else if(input.value >9 && input.value <11) {
+				for(i=1; i<=10; i++)
+					output.innerHTML = output.innerHTML + i+ "<br>";
+			}
+			else {
+				alert('incorrect data')
+			}
+		}
+	</script>
+</body>
+</html>
